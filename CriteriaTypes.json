@@ -1,0 +1,102 @@
+[
+    {
+        "name": "количество участников мероприятия",
+        "type": "main",
+        "countingKey": "all"
+    },
+    {
+        "name": "количество девочек-участниц мероприятия",
+        "type": "main",
+        "countingKey": "woman"
+    },
+    {
+        "name": "количество работ участников",
+        "type": "main",
+        "countingKey": "work"
+    },
+    {
+        "name": "количество команд (семей) участников мероприятия",
+        "type": "main",
+        "countingKey": "team"
+    },
+    {
+        "name": "количество записанных видео в поддержку клуба/команды",
+        "type": "main",
+        "countingKey": "video"
+    },
+    {
+        "name": "фотографии с мероприятия",
+        "type": "mandatory",
+        "countingKey": "photo"
+    },
+    {
+        "name": "фотографии лучших работ организации",
+        "type": "mandatory",
+        "countingKey": "photo"
+    },
+    {
+        "name": "фотографии с выставки работ участников",
+        "type": "mandatory",
+        "countingKey": "photo"
+    },
+    {
+        "name": "съемка видеоролика",
+        "type": "mandatory",
+        "countingKey": "video"
+    },
+    {
+        "name": "новость о проведении мероприятия",
+        "type": "mandatory",
+        "countingKey": "link"
+    },
+    {
+        "name": "размещение ролика на официальном сайте организации",
+        "type": "mandatory",
+        "countingKey": "link"
+    },
+    {
+        "name": "видеоролик о проведении мероприятия от каждого заявленного в проведении участника",
+        "type": "mandatory",
+        "countingKey": "link"
+    },
+    {
+        "name": "фотографии с новогодними украшениями елок в каждом классе",
+        "type": "mandatory",
+        "countingKey": "photo"
+    },
+    {
+        "name": "фотографии работ с общей школьной елки школы",
+        "type": "mandatory",
+        "countingKey": "photo"
+    },
+    {
+        "name": "размещение ссылки участниками фотографий на публикации своих новогодних украшений в социальных сетях с хэштегом - #футболвшколе",
+        "type": "mandatory",
+        "countingKey": "links"
+    },
+    {
+        "name": "Количество проведённых мероприятий организацией",
+        "type": "additional",
+        "countingKey": "actionsCount"
+    },
+    {
+        "name": "Видеоролик о проведении фестиваля в организации (до 3 минут)",
+        "type": "additional",
+        "countingKey": "video"
+    },
+    {
+        "name": "Видеоролик о проведении мероприятия (продолжительность не более 1 минуты, горизонтальная съемка)",
+        "type": "additional",
+        "countingKey": "video"
+    },
+    {
+        "name": "Количество посещённых игр",
+        "type": "additional",
+        "countingKey": "games"
+    },
+    {
+        "name": "за мероприятие",
+        "type": "additional",
+        "countingKey": "bestAction"
+    },
+]

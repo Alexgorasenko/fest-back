@@ -1,0 +1,27 @@
+{
+    "apps": [
+        {
+            "name": "school-be",
+            "script": "./index.js",
+            "instances": 4,
+            "exec_mode": "cluster",
+            "watch": false,
+            "env": {
+                "PORT": 5000,
+                "NODE_ENV": "production",
+                "INSTANCE": "remote",
+                "DB_INSTANCE": "school_fest",
+                "MA": "10.109.11.16",
+                "FILES_BUCKET": "https://s3.megafon.cloud/",
+                "FILES_BUCKET_ID": "fstbe2-fs",
+                "BUCKET_CREDS": {
+                    "accessKeyId": "6RroaHBngAM7JrByKEdn8hBEFGeX8irBSUiVjmqz4Xhy0AZfGPddp9scNXC5fn2RiS392hbtaRxBEGEshe8a9Dn2v",
+                    "secretAccessKey": "79a6471a7bf93562f8fe0ce6eaf3ba26fc52e56885e74182cd6c433c0b98fcce",
+                    "endpoint": "https://s3.megafon.cloud",
+                    "region":"ru-msk2",
+                    "s3ForcePathStyle": true
+                },
+            }
+        }
+    ]
+}

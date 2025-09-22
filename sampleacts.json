@@ -1,0 +1,238 @@
+"как планирвоалось отдавать мероприятия с бэка"
+
+{
+    "activities": [
+        {
+            "_id": "653b8422f93799d3c878f6f0",
+            "festivalId": "6504833ebe06da29021c6b8c",
+            "sample": "activities",
+            "sampleId": "65390eccf6b21ac5e036a891",
+            "__v": 0,
+            "activity": {
+                "_id": "65390eccf6b21ac5e036a891",
+                "name": "Мы – в игре!",
+                "desc": ""
+            },
+            "data": {
+                "main": [
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8a4",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8a4",
+                            "name": "количество девочек-участниц мероприятия",
+                            "type": "main",
+                            "countingKey": "woman"
+                        },
+                        "splitted": true,
+                        "countingId": "65390e0ff6b21ac5e036a889",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a889",
+                            "name": "Количественное отношение к общему",
+                            "type": "main",
+                            "countingKey": "percent"
+                        },
+                        "percent": "woman"
+                    }
+                ],
+                "mandatory": [
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8a8",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8a8",
+                            "name": "фотографии с мероприятия",
+                            "type": "mandatory",
+                            "countingKey": "photo"
+                        },
+                        "splitted": true,
+                        "countingId": "65390e0ff6b21ac5e036a88d",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a88d",
+                            "name": "Количество без балов",
+                            "type": "mandatory",
+                            "countingKey": "count"
+                        },
+                        "photo": {
+                            "min_size": 1,
+                            "count": 3
+                        }
+                    },
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8ac",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8ac",
+                            "name": "новость о проведении мероприятия",
+                            "type": "mandatory",
+                            "countingKey": "link"
+                        },
+                        "splitted": true,
+                        "countingId": "65390e0ff6b21ac5e036a88d",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a88d",
+                            "name": "Количество без балов",
+                            "type": "mandatory",
+                            "countingKey": "count"
+                        },
+                        "link": {
+                            "count": 1
+                        }
+                    }
+                ],
+                "additional": [
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8b4",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8b4",
+                            "name": "Видеоролик о проведении мероприятия (продолжительность не более 1 минуты, горизонтальная съемка)",
+                            "type": "additional",
+                            "countingKey": "video"
+                        },
+                        "splitted": false,
+                        "countingId": "65390e0ff6b21ac5e036a88b",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a88b",
+                            "name": "Баллы за выполнение",
+                            "type": "main",
+                            "countingKey": "bonus"
+                        },
+                        "video": {
+                            "format": "horizontal",
+                            "min_time_sec": 10,
+                            "max_time_sec": 180,
+                            "count": 1,
+                            "bonus": 3
+                        }
+                    },
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8b3",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8b3",
+                            "name": "Видеоролик о проведении фестиваля в организации (до 3 минут)",
+                            "type": "additional",
+                            "countingKey": "video"
+                        },
+                        "splitted": false,
+                        "countingId": "65390e0ff6b21ac5e036a88b",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a88b",
+                            "name": "Баллы за выполнение",
+                            "type": "main",
+                            "countingKey": "bonus"
+                        },
+                        "video": {
+                            "format": "horizontal",
+                            "min_time_sec": 10,
+                            "max_time_sec": 180,
+                            "count": 1,
+                            "bonus": 10
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "653912b81e81a496f23f2a07",
+            "festivalId": "6504833ebe06da29021c6b8c",
+            "sample": "activities",
+            "sampleId": "65390eccf6b21ac5e036a892",
+            "__v": 0,
+            "activity": {
+                "_id": "65390eccf6b21ac5e036a892",
+                "name": "Творческий конкурс",
+                "desc": ""
+            },
+            "data": {
+                "main": [
+                    {
+                        "_id": "65390f2bf6b21ac5e036a8a7",
+                        "criteria": {
+                            "_id": "65390f2bf6b21ac5e036a8a7",
+                            "name": "количество записанных видео в поддержку клуба/команды",
+                            "type": "main",
+                            "countingKey": "video"
+                        },
+                        "splitted": false,
+                        "intervals": [
+                            {
+                                "min": 3,
+                                "max": 5,
+                                "count": 3
+                            },
+                            {
+                                "min": 6,
+                                "max": 8,
+                                "count": 6
+                            },
+                            {
+                                "min": 9,
+                                "max": null,
+                                "count": 10
+                            }
+                        ],
+                        "countingId": "65390e0ff6b21ac5e036a88a",
+                        "counting": {
+                            "_id": "65390e0ff6b21ac5e036a88a",
+                            "name": "Диапозон значений",
+                            "type": "main",
+                            "countingKey": "intervals"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "common": []
+}
+"как это планировалось отдавать на бэк "
+
+{
+    "festivalId": "6504833ebe06da29021c6b8c",
+    "activityId": "65390eccf6b21ac5e036a891",
+    "queryId": "6538a81ce3fea6ca674fdc9a",
+    "queryData": {
+        "main": [{
+                "_id": "65390f2bf6b21ac5e036a8a4",
+                "splitted": true,
+                "countingId": "65390e0ff6b21ac5e036a889",
+                "percent": {
+                    "65047fd5feaee11e6a2cd93e": 0,
+                    "65047fe8feaee11e6a2cd93f": 20,
+                    "65047ff1feaee11e6a2cd940": 30,
+                    "65047ffffeaee11e6a2cd941": 30
+                }
+            }],
+            "mandatory": [
+                {
+                    "_id": "65390f2bf6b21ac5e036a8a8",
+                    "splitted": false,
+                    "countingId": "65390e0ff6b21ac5e036a88d",
+                    "photo": ["651fe635235f9ebbdc17dec3"]
+                },
+                {
+                    "_id": "65390f2bf6b21ac5e036a8ac",
+                    "splitted": false,
+                    "countingId": "65390e0ff6b21ac5e036a88d",
+                    "link": ["https://www.youtube.com/watch?v=okzB9eQoHPs&list=PLH2uOy1TYxYny51nb1O0e-uQj2tZxUy_P&index=3"]
+                },
+                {
+                    "_id": "65390f2bf6b21ac5e036a8b1",
+                    "splitted": false,
+                    "countingId": "65390e0ff6b21ac5e036a88d",
+                    "links": ["https://www.youtube.com/watch?v=okzB9eQoHPs&list=PLH2uOy1TYxYny51nb1O0e-uQj2tZxUy_P&index=3"]
+                }
+            ],
+            "additional": [
+                {
+                    "_id": "65390f2bf6b21ac5e036a8b4",
+                    "splitted": false,
+                    "countingId": "65390e0ff6b21ac5e036a88b",
+                    "video": ["https://www.youtube.com/watch?v=okzB9eQoHPs&list=PLH2uOy1TYxYny51nb1O0e-uQj2tZxUy_P&index=3"]
+                },
+                {
+                    "_id": "65390f2bf6b21ac5e036a8b3",
+                    "splitted": false,
+                    "countingId": "65390e0ff6b21ac5e036a88b",
+                    "video": ["https://www.youtube.com/watch?v=okzB9eQoHPs&list=PLH2uOy1TYxYny51nb1O0e-uQj2tZxUy_P&index=3"]
+                }
+            ]
+    }
+}

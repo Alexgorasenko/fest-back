@@ -1,0 +1,162 @@
+[
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "nominations",
+        "sampleId": "65047f45feaee11e6a2cd93b",
+        "data": {
+            "_id": "65047f45feaee11e6a2cd93b",
+            "sort": 2,
+            "educationLevels": [
+                "65047fd5feaee11e6a2cd93e"
+            ],
+            "nominationtypes": [
+                "651581d93c01988177c4d178"
+            ]
+        },
+    },
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "nominations",
+        "sampleId": "65047f58feaee11e6a2cd93c",
+        "data": {
+            "_id": "65047f58feaee11e6a2cd93c",
+            "sort": 1,
+            "educationLevels": [
+                "65047fe8feaee11e6a2cd93f",
+                "65047ff1feaee11e6a2cd940",
+                "65047ffffeaee11e6a2cd941"
+            ],
+            "nominationtypes": [
+                "65047e745f99c31ca2ac4fef",
+                "65047e555f99c31ca2ac4fee"
+            ]
+        }
+    },
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "activities",
+        "sampleId": "_6504833ebe06da29021c6b8",
+        "data": {
+            "main": [{
+                "_id": "_ID_количество девочек-участниц мероприятия_woman",
+                "splitted": true,
+                "countingId": "_ID_Количественное отношение к общему",
+                "percent": "woman"
+            }]
+        }
+    },
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "activities",
+        "sampleId": "6504833ebe06da29021c6b8d",
+        "data": {
+            "main": [{
+                "_id": "_ID_количество записанных видео в поддержку клуба/команды",
+                "splitted": false,
+                "countingId": "_ID_Диапозон значений",
+                "intervals": [
+                    {"min": 3, "max": 5, "count": 3},
+                    {"min": 6, "max": 8, "count": 6},
+                    {"min": 9, "max": null, "count": 10}
+                ]
+            }]
+        }
+    },
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "common",
+        "sampleId": null,
+        "data": {
+            "common": [
+                {
+                    "_id": "_ID_Количество проведённых мероприятий организацией",
+                    "splitted": false,
+                    "countingId": "_ID_Диапозон значений",
+                    "intervals": [
+                        {"min": 6, "max": 7, "count": 2},
+                        {"min": 8, "max": 9, "count": 4},
+                        {"min": 10, "max": 11, "count": 6},
+                        {"min": 12, "max": 13, "count": 8},
+                        {"min": 14, "max": null, "count": 10},
+                    ]
+                },
+                {
+                    "_id": "_ID_Видеоролик о проведении фестиваля в организации (до 3 минут)",
+                    "splitted": false,
+                    "countingId": "_ID_Баллы за выполнение",
+                    "bonus": 10
+                }
+            ],
+        }
+    },
+    {
+        "festivalId": "6504833ebe06da29021c6b8c",
+        "sample": "activities",
+        "sampleId": "_6504833ebe06da29021c6b8",
+        "data": {
+            "main": [{
+                "_id": "_ID_количество девочек-участниц мероприятия_woman",
+                "splitted": true,
+                "countingId": "_ID_Зависимость баллов от количества",
+                "intervals": [
+                    {"min": 3, "max": 5, "count": 3},
+                    {"min": 6, "max": 8, "count": 6},
+                    {"min": 9, "max": null, "count": 10}
+                ]
+            }],
+            "mandatory": [
+                {
+                    "_id": "_ID_фотографии с мероприятия",
+                    "splitted": false,
+                    "countingId": "_ID_Количество без балов",
+                    "photo": {
+                        "min_size": 1,
+                        "count": 3
+                    }
+                },
+                {
+                    "_id": "_ID_новость",
+                    "splitted": false,
+                    "countingId": "_ID_Количество без балов",
+                    "link": {
+                        "count": 1
+                    },
+                },
+                {
+                    "_id": "_ID_размещение ссылки участниками",
+                    "splitted": false,
+                    "countingId": "_ID_Количество без балов",
+                    "links": {
+                        "count": 0
+                    }
+                }
+            ],
+            "additional": [
+                {
+                    "_id": "_ID_Видеоролик о проведении мероприятия",
+                    "splitted": false,
+                    "countingId": "_ID_Баллы за выполнение",
+                    "video": {
+                        "format": "horizontal",
+                        "min_time_sec": 10,
+                        "max_time_sec": 60,
+                        "count": 1,
+                        "bonus": 3
+                    }
+                },
+                {
+                    "_id": "_ID_Видеоролик о проведении фестиваля в организации (до 3 минут)",
+                    "splitted": false,
+                    "countingId": "_ID_Баллы за выполнение",
+                    "video": {
+                        "format": "horizontal",
+                        "min_time_sec": 10,
+                        "max_time_sec": 180,
+                        "count": 1,
+                        "bonus": 10
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Количественное отношение к общему",
+        "type": "main",
+        "countingKey": "percent"
+    },
+    {
+        "name": "Диапозон значений",
+        "type": "main",
+        "countingKey": "intervals"
+    },
+    {
+        "name": "Баллы за выполнение",
+        "type": "main",
+        "countingKey": "bonus"
+    },
+    {
+        "name": "Количество",
+        "type": "main",
+        "countingKey": "count"
+    },
+    {
+        "name": "Количество без балов",
+        "type": "mandatory",
+        "countingKey": "count"
+    },
+]

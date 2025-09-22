@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+.page {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+.top .title {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 84%;
+    position: relative;
+    margin: 0 auto 1rem;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+}
+
+tr, td {
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+
+tr.divided {
+    border-bottom: 2px solid #d3d3d3;
+}
+
+table td table, table td table tr, table td table td {
+    border-style: none;
+}
+
+.table td.center {
+    text-align: center;
+}
+
+.table td.right {
+    text-align: right;
+}
+
+.table td.right-border {
+    border-right: 2px solid #d3d3d3;
+}
+
+.table td.bold {
+    font-weight: bold;
+}
+
+tr.executive {
+    border: none;
+    vertical-align: baseline;
+}
+
+tr.executive td {
+    padding-top: 2rem;
+    border: none;
+}
+
+tr.executive td span {
+    text-decoration: underline;
+}

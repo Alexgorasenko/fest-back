@@ -1,0 +1,31 @@
+<html>
+    <body style="margin: 0; background: #F5F9FF; width: 100%; max-width: 640px;">
+        {{#if message}}
+            <p>{{message}}</p>
+        {{else}}
+            <table style="width: 100%; border-spacing: 50px;">
+                <tr height="100">
+                    <td style="" width="88px">
+                        <img alt="Лого фестиваля" style="width: 88px;" src="https://api-fests.rfs.ru/assets/mail_logo.png" />
+                    </td>
+                    <td>
+                        <p style="margin-left: -30px;">Всероссийский фестиваль </br><b>«Футбол в школе»</b>‎</p>
+                    </td>
+                </tr>
+                {{#if verify}}
+                    {{>verify_partial}}
+                {{else if recoveryAccess}}
+                    {{>recoveryAccess_partial}}
+                {{else if createdQuery}}
+                    {{>createdQuery_partial}}
+                {{else if changedQueryStatus}}
+                    {{>changedQueryStatus_partial}}
+                {{else if initSvr}}
+                    {{>initSvr_partial}}
+                {{/if}}
+                {{>disclaimer_partial}}
+
+            </table>
+        {{/if}}
+    </body>
+</html>

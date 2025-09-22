@@ -1,0 +1,36 @@
+{
+    "festivalId": "6504833ebe06da29021c6b8c",
+    "queryId": "6538a81ce3fea6ca674fdc9a",
+    "summary": {
+        "activitiesReported": 3,
+        "activitiesScores": 6.9,
+        "bonusScores": 3,
+        "totalScores": 9.9,
+        "finishButtonEnabled": true
+    },
+    "activities": [
+        {
+            "_id": "65390eccf6b21ac5e036a891",
+            "name": "Мы – в игре!",
+            "activityScore": null
+        },
+        {
+            "_id": "65390eccf6b21ac5e036a891", //onClick getActivityReport?activityId=XXXXXXXXX&queryId=XXXXXXXX&nomination.....
+            "name": "Мы – в игре!",
+            "activityScore": 3.9
+        },
+        {
+            "_id": "65390eccf6b21ac5e036a891",
+            "name": "Мы – в игре!",
+            "activityScore": null
+        },
+        {
+            "_id": "65390eccf6b21ac5e036a891",
+            "name": "Мы – в игре!",
+            "activityScore": 3.9
+        },
+        {
+            //последний activity - бонусное видео - при включении бонусного видео в настройках феста - создается отдельный док activity
+        }
+    ]
+}

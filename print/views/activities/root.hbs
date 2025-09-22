@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/assets/activities.css" />
+
+<div class="page" id="sharable">
+    <div class="signature">
+        <div class="cell">
+            <div>«‎УТВЕРЖДАЮ»</div>
+            <div>{{signatures.top.position}} {{signatures.top.orgName}}</div>
+            <div class="sign">
+                <div></div>
+                <div class="name">/ {{signatures.top.name}}</div>
+                <div class="stamp">М.П.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="title">Форма подведения итогов Всероссийского фестиваля «‎Футбол в школе» 2023-2024 учебного года</div>
+        <div class="subtitle">Участие в номинации «‎Общее образование» (до 300 человек)</div>
+    </div>
+
+    <div class="table">
+        <div class="table-row _head">
+            {{#each head as |column|}}
+                <div class="column-head" style="width: {{column.width}}%">
+                    <span>{{column.content}}</span>
+                    {{#if column.groups}}
+                        <div class="column-groups">
+                            {{#each column.groups as |group|}}
+                                <div class="column-group">
+                                    <span>{{group.content}}</span>
+                                    {{#each group.columns as |col|}}
+                                        <div>
+                                            <span>{{col.content}}</span>
+                                        </div>
+                                    {{/each}}
+                                </div>
+                            {{/each}}
+                        </div>
+                    {{/if}}
+                </div>
+            {{/each}}
+        </div>
+
+        {{#each activities as |item|}}
+            <div class="table-row values-row">
+                {{#each item as |col|}}
+                    <div style="width: {{col.width}}%" class="{{col.cellClass}}">
+                        {{#if col.value}}
+                            <span>{{col.value}}</span>
+                        {{/if}}
+
+                        {{#if col.groups}}
+                            <div class="values-group">
+                                {{#each col.groups as |group|}}
+                                    <div class="values-row" style="width: {{col.groupInnerWidth}}%">
+                                        {{#each group as |val|}}
+                                            <div>{{val.value}}</div>
+                                        {{/each}}
+                                    </div>
+                                {{/each}}
+                            </div>
+                        {{/if}}
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+
+        {{#each extras as |row|}}
+            <div class="table-row values-row">
+                <div class="extra-label">{{row.label}}</div>
+                <div class="extra-values">
+                    {{#each row.cells as |cell|}}
+                        <div style="width: {{cell.width}}%">
+                            <span>{{cell.value}}</span>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+
+        <div class="table-row total-row">
+            <div class="total-label">ИТОГО:</div>
+            <div class="total-value">{{total}}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-signature">
+        <div>Ответственное лицо за проведение фестиваля «‎Футбол в школе» в учреждении -</div>
+        <div class="sign">
+            <div></div>
+            <div class="name"> / {{signatures.bottom.name}}</div>
+        </div>
+    </div>
+</div>

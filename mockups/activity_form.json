@@ -1,0 +1,168 @@
+{
+    "_id": null,
+    "activityId": "65390eccf6b21ac5e036a891",
+    "queryId": "651f1b2fd0e9b6a01635fe0f",
+    "info": {
+        "title": "Мы – в игре!",
+        "description": "Спортивный праздник для детей и родителей. Цели: Формирование у учащихся культуры сохранения и совершенствования собственного здоровья. Задачи: Развитие взаимоотношений между родителями и детьми. Оборудование: Мячи, обручи, скакалки, дощечки, туалетная бумага, ведра для мусора. Подготовка к празднику: Каждой семье передаётся приглашение."
+    },
+    "controls": [
+        {
+            "type": "date",
+            "reportDataKey": "date",
+            "label": "Дата последнего мероприятия",
+            "mutedLabel": "(из всех возрастных категорий)",
+            "value": null
+        },
+        {
+            "type": "countStudents",
+            "columns": [
+                {
+                    "title": "1-4 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало девочек",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.0.girls",
+                            "value": null
+                        },
+                        {
+                            "type": "number",
+                            "label": "Участвовало мальчиков",
+                            "disabled": true,
+                            "disabledHint": "Согласно положению, в данном мероприятии принимают участие только девочки",
+                            "mandatory": true,
+                            "reportDataKey": "criterias.0.boys",
+                            "value": null
+                        }
+                    ]
+                },
+                {
+                    "title": "5-8 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало девочек",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.0.girls",
+                            "value": null
+                        },
+                        {
+                            "type": "number",
+                            "label": "Участвовало мальчиков",
+                            "disabled": true,
+                            "disabledHint": "Согласно положению, в данном мероприятии принимают участие только девочки",
+                            "mandatory": true,
+                            "reportDataKey": "criterias.0.boys",
+                            "value": null
+                        }
+                    ]
+                },
+                {
+                    "title": "9-10 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало девочек",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.0.girls",
+                            "value": null
+                        },
+                        {
+                            "type": "number",
+                            "label": "Участвовало мальчиков",
+                            "disabled": true,
+                            "disabledHint": "Согласно положению, в данном мероприятии принимают участие только девочки",
+                            "mandatory": true,
+                            "reportDataKey": "criterias.0.boys",
+                            "value": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "countTeams",
+            "columns": [
+                {
+                    "title": "1-4 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало команд",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.1.qty",
+                            "value": null
+                        }
+                    ]
+                },
+                {
+                    "title": "5-8 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало команд",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.1.qty",
+                            "value": null
+                        }
+                    ]
+                },
+                {
+                    "title": "9-11 класс",
+                    "controls": [
+                        {
+                            "type": "number",
+                            "label": "Участвовало команд",
+                            "disabled": false, //наследуется из заявки или настроек activity
+                            "disabledHint": null,
+                            "mandatory": true, //наследуется из настроек activity
+                            "reportDataKey": "criterias.1.qty",
+                            "value": null
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "photo",
+            "label": "Фотографии мероприятия",
+            "mutedLabel": "(минимальный размер 1Мб)",
+            "maxItems" 3,
+            "mandatory": true,
+            "reportDataKey": "criterias.2.urls",
+            "value": []
+        },
+        {
+            "type": "video",
+            "label": "Ссылка на видео",
+            "mutedLabel": null,
+            "maxItems" 1,
+            "mandatory": true,
+            "reportDataKey": "criterias.3.urls",
+            "value": [],
+            "description": "list markup"
+        },
+        {
+            "type": "publication",
+            "label": "Ссылка на публикацию",
+            "mutedLabel": null,
+            "maxItems" 1,
+            "mandatory": true,
+            "reportDataKey": "criterias.4.urls",
+            "value": [],
+            "description": "list markup"
+        }
+    ]
+}
